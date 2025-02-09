@@ -9,3 +9,9 @@ function downloadResume() {
     
     
 }
+document.addEventListener("scroll", function () {
+    const aboutSection = document.querySelector("#about h3");
+    if (aboutSection.getBoundingClientRect().top < window.innerHeight) {
+        aboutSection.classList.add("show");
+    }
+});

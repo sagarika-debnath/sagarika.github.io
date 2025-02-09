@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -19,51 +20,71 @@
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Hello,I'm Sagarika</h2>
-    </section>
-
-    <section id="about">
-        <h3>About Me</h3>
-        <p>I'm a third-year undergraduate student of the Department of Ocean Engineering and Naval Architechture at IIT Kharagpur. I've a keen interest in web development, machine learning and data science.I am always looking to expand my knowledge and take on new challenges.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <h3>Data-Driven Flight Delay Optimization Project</h3>
-            <ul>
-                <li>Developed a CNN-LSTM model to capture spatial and temporal dependencies in flight delays.</li>
-                <li>Used Mean Absolute Error (MAE) to evaluate model performance and analyzed airport and flight route networks using graph-based techniques.</li>
-                <li>Implemented a Simple Genetic Algorithm to optimize flight schedules for minimizing delays and utilized radar plots for feature importance analysis.</li>
-            </ul>
-        </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <h3>Visual Taxonomy Project (Fashion Attribute Prediction)</h3>
-            <ul>
-                <li>Designed a Hybrid Deep Learning model to predict key attributes such as color, pattern, and sleeve length from fashion item images.</li>
-                <li>Worked on a dataset of fashion item images across five categories and explored computer vision techniques to improve prediction accuracy.</li>
-                <li>Focused on maximizing the harmonic mean of micro and macro F1 scores for evaluation.</li>
-            </ul>
+    <section id="hero" class="text-center p-5">
+        <div class="container">
+            <h1 class="display-4">Hello, I'm Sagarika</h1>
+            <p class="lead">A Web Developer and Data Science Enthusiast</p>
         </div>
     </section>
 
-    <section id="hero">
+    <section id="about" class="container py-5 text-center">
+        <h3 class="fade-in">About Me</h3>
+        <p class="typewritter">I'm a third-year undergraduate student of the Department of Ocean Engineering and Naval Architechture at IIT Kharagpur. I've a keen interest in web development, machine learning and data science.I am always looking to expand my knowledge and take on new challenges.</p>
+    </section>
+
+    <section id="projects" class="container py-5">
+        <h2 class=""text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card bg-dark text-light p-3">
+                    <h3>Data-Driven Flight Delay Optimization Project</h3>
+                    <ul>
+                       <li>Developed a CNN-LSTM model to capture spatial and temporal dependencies in flight delays.</li>
+                       <li>Used Mean Absolute Error (MAE) to evaluate model performance and analyzed airport and flight route networks using graph-based techniques.</li>
+                       <li>Implemented a Simple Genetic Algorithm to optimize flight schedules for minimizing delays and utilized radar plots for feature importance analysis.</li>
+                    </ul>  
+                </div> 
+            </div>
+        
+            <div class="col-md-6">
+                <div class="card bg-dark text-light p-3">
+                    
+                    <h3>Visual Taxonomy Project (Fashion Attribute Prediction)</h3>
+                    <ul>
+                        <li>Designed a Hybrid Deep Learning model to predict key attributes such as color, pattern, and sleeve length from fashion item images.</li>
+                        <li>Worked on a dataset of fashion item images across five categories and explored computer vision techniques to improve prediction accuracy.</li>
+                        <li>Focused on maximizing the harmonic mean of micro and macro F1 scores for evaluation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hero" class="container py-5 text-center">
         <h2>I have attached my CV below for reference.</h2>
-        <button onclick="downloadResume()">Download Resume</button>
+        <button class="btn btn-primary" onclick="downloadResume()">Download Resume</button>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container py-5 text-center">
         <h2>Contact Me</h2>
         <p>Email: sagarikadth12@gmail.com</p>
-        <p>Socials: GitHub | LinkedIn | Instagram</p>
+        <a href="https://github.com/sagarika-debnath" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/sagarika-debnath-9a7b40256/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/_s_a_g_a_r_i_k_a" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-light text-center p-3">
         <p>&copy; 2025 Sagarika </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 

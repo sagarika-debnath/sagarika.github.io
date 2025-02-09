@@ -27,13 +27,13 @@ nav ul li a {
     text-decoration: none;
 }
 
-.project-card {
+/* .project-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
-}
+} */
 
 button {
     background: #0dcaf0;
@@ -42,4 +42,38 @@ button {
     cursor: pointer;
     color: #121212;
     font-weight: bold;
+}
+.social-icon {
+    font-size: 30px;
+    margin: 10px;
+    color: #0dcaf0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ffffff;
+    font-size: 1.2rem;
+    animation: typing 3s steps(40, end) forwards;
 }

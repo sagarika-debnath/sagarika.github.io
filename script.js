@@ -1,17 +1,23 @@
 function downloadResume() {
-    const resumeUrl = 'C:\Users\Hp\Downloads\CV _ research.pdf'; // Replace with the actual path to your resume
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'Your_Resume.pdf'; // Set the file name for download
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    
-    
+    alert("Downloading Resume...");
 }
-document.addEventListener("scroll", function () {
-    const aboutSection = document.querySelector("#about h3");
-    if (aboutSection.getBoundingClientRect().top < window.innerHeight) {
-        aboutSection.classList.add("show");
-    }
+
+ document.addEventListener("DOMContentLoaded", function () {
+        const messages = ["My", "Name", "is", "Sagarika", "Debnath !"];
+        let index = 0;
+        const highlight = document.getElementById("highlight");
+
+        if (!highlight) {
+            console.error("Element with ID 'loadingText' not found!");
+            return;
+        }
+
+        const changeText = setInterval(() => {
+            highlight.textContent = messages[index];
+            index++;
+
+            if (index >= messages.length) {
+                clearInterval(changeText); // Stop changing text when done
+            }
+        }, 500); // Change text every 500ms
 });
